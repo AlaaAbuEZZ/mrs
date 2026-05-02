@@ -1,0 +1,14 @@
+D:\AppAlaaCore\Coders\MRS\Domain\bin\Debug\net10.0\Domain.deps.json
+D:\AppAlaaCore\Coders\MRS\Domain\bin\Debug\net10.0\Domain.runtimeconfig.json
+D:\AppAlaaCore\Coders\MRS\Domain\bin\Debug\net10.0\Domain.dll
+D:\AppAlaaCore\Coders\MRS\Domain\bin\Debug\net10.0\Domain.pdb
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.csproj.AssemblyReference.cache
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.dll
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\refint\Domain.dll
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.pdb
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\Domain.genruntimeconfig.cache
+D:\AppAlaaCore\Coders\MRS\Domain\obj\Debug\net10.0\ref\Domain.dll

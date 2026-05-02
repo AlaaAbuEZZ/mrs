@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Application/Application.csproj" Id="a428819f-b096-4960-ac14-353629ddf3ec" />
+  <Project Path="Domain/Domain.csproj" />
+  <Project Path="Infastructer/Infastructer.csproj" />
+  <Project Path="MRS/API.csproj" />
+</Solution>
