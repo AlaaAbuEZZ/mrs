@@ -1,11 +1,9 @@
 ﻿using Application.Reposetories;
-using Application.Services.RequestDetails.DTOs;
+using Application.Services.RequestDetailService.DTOs;
 using Domain.Entites;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.EntityFrameworkCore;
-namespace Application.Services.RequestDetails
+
+namespace Application.Services.RequestDetailService
 {
     public class RequestDetailService : IRequestDetailService
     {
@@ -18,31 +16,49 @@ namespace Application.Services.RequestDetails
 
         public async Task Create(CreateRequestDetailDto input)
         {
-            var data = new RequestDetail
+            var entity = new RequestDetail
             {
                 Id = Guid.NewGuid(),
                 RequestId = input.RequestId,
                 Location = input.Location,
                 EmployeeNote = input.EmployeeNote,
-                PhotoURL = input.PhotoURL
+                PhotoURL = input.PhotoURL,
+                TechnicianNote = ""
             };
 
-            await _repo.InsertAsync(data);
+            await _repo.InsertAsync(entity);
             await _repo.SaveChangesAsync();
+        }
+
+        public async Task<List<GetRequestDetailDto>> GetAll()
+        {
+            return await _repo.GetAll()
+                .Select(x => new GetRequestDetailDto
+                {
+                    Id = x.Id,
+                    RequestId = x.RequestId,
+                    Location = x.Location,
+                    EmployeeNote = x.EmployeeNote,
+                    TechnicianNote = x.TechnicianNote,
+                    PhotoURL = x.PhotoURL
+                })
+                .ToListAsync();
         }
 
         public async Task<GetRequestDetailDto> GetByRequestId(Guid requestId)
         {
-            var data = await _repo.GetAll()
-                .FirstOrDefaultAsync(x => x.RequestId == requestId);
-
-            return new GetRequestDetailDto
-            {
-                Location = data.Location,
-                EmployeeNote = data.EmployeeNote,
-                TechnicianNote = data.TechnicianNote,
-                PhotoURL = data.PhotoURL
-            };
+            return await _repo.GetAll()
+                .Where(x => x.RequestId == requestId)
+                .Select(x => new GetRequestDetailDto
+                {
+                    Id = x.Id,
+                    RequestId = x.RequestId,
+                    Location = x.Location,
+                    EmployeeNote = x.EmployeeNote,
+                    TechnicianNote = x.TechnicianNote,
+                    PhotoURL = x.PhotoURL
+                })
+                .FirstOrDefaultAsync();
         }
     }
 }

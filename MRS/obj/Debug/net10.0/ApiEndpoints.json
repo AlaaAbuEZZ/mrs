@@ -116,6 +116,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.RequestDetailController",
+    "Method": "Create",
+    "RelativePath": "api/RequestDetail/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Application.Services.RequestDetailService.DTOs.CreateRequestDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.RequestDetailController",
+    "Method": "GetAll",
+    "RelativePath": "api/RequestDetail/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.RequestDetailController",
+    "Method": "GetByRequest",
+    "RelativePath": "api/RequestDetail/get-by-request/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.RequestHistoryController",
     "Method": "GetByRequest",
     "RelativePath": "api/RequestHistory/{requestId}",

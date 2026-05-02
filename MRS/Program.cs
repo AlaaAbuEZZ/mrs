@@ -2,7 +2,7 @@ using Application.Reposetories;
 using Application.Services.AuthService;
 using Application.Services.CategoryService;
 using Application.Services.CurrentUserService;
-using Application.Services.RequestDetails;
+using Application.Services.RequestDetailService;
 using Application.Services.RequestHistory;
 using Application.Services.RequestService;
 using Application.Services.RoleService;
@@ -48,6 +48,7 @@ builder.Services.AddScoped<ITechnicianCategoryService, TechnicianCategoryService
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IRequestHistoryService, RequestHistoryService>();
 builder.Services.AddScoped<IRequestDetailService, RequestDetailService>();
+
 //builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 builder.Services.AddScoped<IRequestService, RequestService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();

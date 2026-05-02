@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Application.Services.RequestDetails.DTOs
+﻿namespace Application.Services.RequestDetailService.DTOs
 {
     public class CreateRequestDetailDto
     {

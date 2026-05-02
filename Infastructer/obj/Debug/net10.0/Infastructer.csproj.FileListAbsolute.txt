@@ -17,3 +17,4 @@ D:\AppAlaaCore\Coders\MRS\Infastructer\obj\Debug\net10.0\Infastructer.genruntime
 D:\AppAlaaCore\Coders\MRS\Infastructer\obj\Debug\net10.0\ref\Infastructer.dll
 D:\AppAlaaCore\Coders\MRS\Infastructer\bin\Debug\net10.0\Application.dll
 D:\AppAlaaCore\Coders\MRS\Infastructer\bin\Debug\net10.0\Application.pdb
+D:\AppAlaaCore\Coders\MRS\Infastructer\obj\Debug\net10.0\Infastructer.sourcelink.json

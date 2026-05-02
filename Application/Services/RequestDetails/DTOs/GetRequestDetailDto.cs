@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Application.Services.RequestDetails.DTOs
+﻿namespace Application.Services.RequestDetailService.DTOs
 {
     public class GetRequestDetailDto
     {
+        public Guid Id { get; set; }
+        public Guid RequestId { get; set; }
         public string Location { get; set; }
         public string EmployeeNote { get; set; }
         public string TechnicianNote { get; set; }

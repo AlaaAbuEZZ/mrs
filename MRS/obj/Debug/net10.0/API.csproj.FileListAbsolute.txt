@@ -166,3 +166,4 @@ D:\AppAlaaCore\Coders\MRS\MRS\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGe
 D:\AppAlaaCore\Coders\MRS\MRS\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\AppAlaaCore\Coders\MRS\MRS\bin\Debug\net10.0\Application.dll
 D:\AppAlaaCore\Coders\MRS\MRS\bin\Debug\net10.0\Application.pdb
+D:\AppAlaaCore\Coders\MRS\MRS\obj\Debug\net10.0\API.sourcelink.json
